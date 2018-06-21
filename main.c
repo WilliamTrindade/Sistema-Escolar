@@ -44,20 +44,27 @@ main(){
 	
 	while(1){
 		while(!(opt>0 && opt<4)){
-			printf("\tGerenciador de Alunos v1.0\n\n1.Associar Aluno\n\n2.Inserir Aluno\n\n");
+			printf("\tGerenciador de Alunos v1.0\n\n1.Matricular Aluno\n\n2.Inserir Aluno\n\n");
 			scanf("%d",&opt);
 			system("cls");
 		}
 		switch(opt){
 			case 1:{
-				associar_aluno();
-				break;
-			}
-			case 2:{
 				inserir_aluno();
 				break;
 			}
+			case 2:{
+				exit(0);
+				break;
+			}
+			default:{
+				printf ("Valor invalido!\n");
+				opt = 0;
+				system("pause");
+				break;
+			}
+				
+			
 		}
 	}
 }
-
