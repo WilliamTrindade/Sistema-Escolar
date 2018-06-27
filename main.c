@@ -43,18 +43,24 @@ main(){
 	disciplinas[4].horario[1][4] = 1;
 	
 	while(1){
-		while(!(opt>0 && opt<4)){
-			printf("\tGerenciador de Alunos v1.0\n\n1.Matricular Aluno\n\n2.Inserir Aluno\n\n");
-			scanf("%d",&opt);
-			system("cls");
-		}
+		printf("\tGerenciador de Alunos v1.0\n\n1.Inserir Aluno\n\n2.Consultar Aluno\n\n3.Consultar Disciplinas\n\n4.Sair\n\n");
+		scanf("%d",&opt);
+		system("cls");
 		switch(opt){
 			case 1:{
 				inserir_aluno();
 				break;
 			}
 			case 2:{
-				exit(0);
+				consultar_aluno();
+				break;
+			}
+			case 3:{
+				consultar_disciplina();
+				break;
+			}
+			case 4:{
+				
 				break;
 			}
 			default:{
