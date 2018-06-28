@@ -9,7 +9,7 @@ main(){
 	strcpy(disciplinas[0].professor, "Jonas");
 	disciplinas[0].carga = 60;
 	disciplinas[0].horario[0][0] = 1; 
-	disciplinas[0].horario[3][1] = 1;
+	disciplinas[0].horario[1][1] = 1;
 	
 	//1
 	disciplinas[1].codigo = 127;
@@ -17,7 +17,7 @@ main(){
 	strcpy(disciplinas[1].professor, "Jonas");
 	disciplinas[1].carga = 60;
 	disciplinas[1].horario[2][1] = 1; 
-	disciplinas[1].horario[1][1] = 1;
+	disciplinas[1].horario[3][2] = 1;
 	
 	//2
 	disciplinas[2].codigo = 132;
@@ -26,6 +26,7 @@ main(){
 	disciplinas[2].carga = 60;
 	disciplinas[2].horario[2][1] = 1; 
 	disciplinas[2].horario[1][3] = 1;
+	
 	
 	//3
 	disciplinas[3].codigo = 143;
@@ -60,7 +61,7 @@ main(){
 				break;
 			}
 			case 4:{
-				
+				return;
 				break;
 			}
 			default:{
@@ -69,8 +70,6 @@ main(){
 				system("pause");
 				break;
 			}
-				
-			
 		}
 	}
 }
